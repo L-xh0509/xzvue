@@ -1,18 +1,15 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  
+  
 }
 </script>
 
@@ -25,4 +22,16 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+/*整个页面的背景色*/
+body{
+  background-color: #f5f5f5;
+  min-width:1000px;
+}
+/*一级容器定宽居中*/
+body>.container{
+  width:1000px;
+  min-width:1000px;
+  margin:0 auto;
+}
+
 </style>
